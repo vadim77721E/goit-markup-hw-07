@@ -1,4 +1,4 @@
-.name-photo{
+.employees__name-photo{
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -35,13 +35,15 @@
 }
 .poster{
     display: block;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
-.poster:hover,
-.poster:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .poster:hover .portfolio-overlay,
 .poster:focus .portfolio-overlay {
     transform: translateY(0);
@@ -51,7 +53,7 @@
 .poster:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: transparent;
+    outline: transparent;
 }
 .thumb {
     position: relative;

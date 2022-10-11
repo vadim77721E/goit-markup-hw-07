@@ -25,6 +25,13 @@
     letter-spacing: 0.01em;
     color: var(--primary-text-color-theme-light);
 }
+
+.contact-form-input-wrapper{
+    position: relative;
+    display: block;
+    margin-top: 4px;
+}
+
 .contact-form-input{
     display: block;
     width: 100%;
@@ -33,21 +40,19 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
-    transition: border-color var(--time-transition) var(--function-bezier) ;
+    transition: border-color var(--time-transition) var(--function-bezier);
+
+    &:focus {
+        outline: none;
+        border-color: var(--secondary-text-color-theme-light);
+    }
 }
 
-.contact-form-input:focus {
-    outline: none;
-    border-color: var(--secondary-text-color-theme-light);
-}
+
 .contact-form-input:focus + .icon-svg-form{
     fill: var(--secondary-text-color-theme-light);
 }
-.contact-form-input-wrapper{
-    position: relative;
-    display: block;
-    margin-top: 4px;
-}
+
 .icon-svg-form{
     position: absolute;
     top: 50%;
@@ -69,13 +74,14 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color var(--time-transition) var(--function-bezier) ;
+    transition: border-color var(--time-transition) var(--function-bezier);
+
+    &:focus {
+        outline: none;
+        border-color: var(--secondary-text-color-theme-light);
+    }
+    &::placeholder{
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
-.contact-form-message:focus {
-    outline: none;
-    border-color: var(--secondary-text-color-theme-light);
-}
-.contact-form-message::placeholder{
-    color: rgba(117, 117, 117, 0.5);
-}

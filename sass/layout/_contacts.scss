@@ -1,4 +1,10 @@
-.contacts-phone-mail {
+.list-ul{
+    display: flex;
+    margin-left: auto;
+}
+
+
+.list-ul__phone-mail {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -7,13 +13,19 @@
     color: var(--primary-text-color-theme-light);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+       color: var(--accent-color);
+    } 
 }
 
-.contacts-phone-mail:hover,
-.contacts-phone-mail:focus {
-    color: var(--accent-color);
-}    
 
-.contacts-mail-class:not(:last-child){
+.list-ul__contacts:not(:last-child){
     margin-right: 50px; 
+}
+
+.list-ul__icon {
+    margin-right: 10px;
+    fill: currentColor;
 }

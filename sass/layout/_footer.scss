@@ -13,10 +13,12 @@ margin-top: 20px;
 
 .end{
     margin-bottom: 9px;
+
+    &:last-child{
+        margin-bottom: 0px;
+    }
 }
-.end:last-child{
-    margin-bottom: 0px;
-}
+
 .logo-address{
     margin-top: 20px;
 }
@@ -32,11 +34,13 @@ margin-top: 20px;
    font-weight: normal; 
    font-style: normal;
    line-height: 1.42;
+
+   &:hover,
+   &:focus {
+     color: var(--accent-color);
+   }
 }
-.contacts-footer:hover,
-.contacts-footer:focus {
-color: var(--accent-color);
-}
+
 .footer-decor {
     width: 231px;
     margin-right: 70px;

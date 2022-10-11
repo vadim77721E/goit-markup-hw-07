@@ -16,9 +16,15 @@
     text-align: center;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-btn:hover,
-.modal-btn:focus {
+
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
     color: var(--secondary-text-color-theme-whaite);
+}
+}
+.modal-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
